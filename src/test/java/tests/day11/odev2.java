@@ -25,18 +25,25 @@ public class odev2 extends TestBase {
 //    cancel Alert  (Press a Button !)
         driver.findElement(By.xpath("(//a[@class='analystic'])[2]")).click();
         driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
-        Thread.sleep(3000);
+      //  Thread.sleep(3000);
         driver.switchTo().alert().dismiss();
 //    click "Alert with Textbox" and click 'click the button to demonstrate the prompt box'
         driver.findElement(By.xpath("(//a[@class='analystic'])[3]")).click();
         driver.findElement(By.xpath("//button[@class='btn btn-info']")).click();
-        Thread.sleep(2000);
-        // driver.switchTo().alert().accept();
+      //  Thread.sleep(2000);
+
         driver.switchTo().alert().sendKeys("TechProEducation");
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         driver.switchTo().alert().accept();
 
         WebElement message = driver.findElement(By.id("demo1"));
         System.out.println(message.getText());
     }
 }
+
+    //WebElement signIn=driver.findElement(By.linkText("Sign in"));
+//        signIn.click();
+////        WebElement userName=driver.findElement(By.id("login-username"));
+//        userName.sendKeys("onerdogan91@yahoo.com"+ Keys.ENTER);
+//        WebElement passWord=driver.findElement(By.id("login-passwd"));
+//        passWord.sendKeys("od233777"+Keys.ENTER);
