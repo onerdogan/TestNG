@@ -55,7 +55,7 @@ public class C03_DependsOn {
         driver.findElement(By.xpath("(//span[@class='a-size-base-plus a-color-base a-text-normal'])[1]")).click();
         WebElement fiyat= driver.findElement(By.xpath("//span[@class='a-size-base a-color-price']"));
         System.out.println(fiyat.getText());
-        Assert.assertEquals(fiyat.getText(),"$16.83");
+        Assert.assertEquals(fiyat.getText(),"$14.99");
     }
     @AfterClass
     public void tearDown(){

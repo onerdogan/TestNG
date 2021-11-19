@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public abstract class TestBase {
-    protected static WebDriver driver;
+    public static WebDriver driver;
     // abstract yaparak bu class'dan obje olusturulmasinin onune geceriz
 
     static public String getSecondHandle() {
